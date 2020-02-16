@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tssaber.mmall.dao.GoodsMapper">
+    <resultMap id="GoodsResultMap" type="com.tssaber.mmall.entity.pojo.Goods">
+        <id column="id" property="id"/>
+        <result column="category_id" property="categoryId" jdbcType="INTEGER"/>
+        <result column="product_name" property="productName" jdbcType="VARCHAR"/>
+        <result column="sub_title" property="subtitle" jdbcType="VARCHAR"/>
+        <result column="main_image" property="mainImage" jdbcType="VARCHAR"/>
+        <result column="sub_images" property="subImage" jdbcType="VARCHAR"/>
+        <result column="product_detail" property="detail" jdbcType="VARCHAR"/>
+        <result column="product_price" property="price" jdbcType="DECIMAL"/>
+        <result column="product_stock" property="stock" jdbcType="INTEGER"/>
+        <result column="product_status" property="status" jdbcType="INTEGER"/>
+        <result column="gmt_create" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="gmt_modified" property="modifiedTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <cache eviction="LRU" flushInterval="100000" readOnly="true" size="1024"/>
+    <select id="selGoodsById" parameterType="java.lang.Integer" resultMap="GoodsResultMap" useCache="true">
+        select goods.id,goods.category_id,goods.sub_title,goods.main_image,goods.main_image,product_name,
+        goods.product_detail,goods.product_price,goods.product_stock,goods.product_status
+        from mmall_goods as goods
+        where id = #{goodsId}
+    </select>
+
+    <select id="selStockById" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+        select goods.product_stock
+        from mmall_goods as goods
+        where id = #{goodsId}
+    </select>
+
+    <update id="reductionGoods" parameterType="java.lang.Integer">
+        update mmall_goods as goods
+        set goods.product_stock = goods.product_stock - 1
+        where id = #{goodsId}
+    </update>
+
+    <insert id="insGoods" parameterType="com.tssaber.mmall.entity.pojo.Goods" useGeneratedKeys="true">
+        insert into mmall_goods
+        (category_id,product_name,sub_title,main_image,sub_images,product_detail,product_price,
+        product_stock,product_status,gmt_create,gmt_modified)
+        value (#{categoryId},#{productName},#{subtitle},#{mainImage},#{subImage},#{detail},#{price},
+        #{stock},#{status},#{createTime},#{modifiedTime})
+    </insert>
+
+    <select id="selGoodsNew" useCache="true" resultMap="GoodsResultMap">
+        select id,category_id,product_name,sub_title,main_image,sub_images,product_detail,
+        product_price,product_stock,product_status
+        from mmall_goods as goods
+        order by goods.gmt_create desc limit 100
+    </select>
+
+    <select id="selGoodsByCategory" parameterType="java.lang.Integer" resultMap="GoodsResultMap">
+        select id,product_name,sub_title,main_image,product_price
+        from mmall_goods
+        where category_id = #{category} and product_stock != 0
+        ORDER BY gmt_create;
+    </select>
+</mapper>

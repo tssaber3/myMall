@@ -1,0 +1,547 @@
+2020-01-23 15:16:13.581 [main] INFO  com.tssaber.mmall.MmallApplication - Starting MmallApplication on LAPTOP-G18KLG04 with PID 4912 (D:\project\springsecurity-master\target\classes started by zj in D:\project\springsecurity-master)
+2020-01-23 15:16:13.582 [main] INFO  com.tssaber.mmall.MmallApplication - No active profile set, falling back to default profiles: default
+2020-01-23 15:16:13.622 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37e4d7bb: startup date [Thu Jan 23 15:16:13 CST 2020]; root of context hierarchy
+2020-01-23 15:16:13.756 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2020-01-23 15:16:14.236 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-23 15:16:14.259 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-23 15:16:14.538 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$5b3f4b5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 15:16:14.581 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$94d38d2d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 15:16:14.602 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$2d815567] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 15:16:14.607 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 15:16:14.608 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5d5c04f9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 15:16:14.613 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$5255f819] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 15:16:14.618 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 15:16:14.826 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+2020-01-23 15:16:14.834 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-01-23 15:16:14.845 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-01-23 15:16:14.845 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.39
+2020-01-23 15:16:14.914 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-01-23 15:16:14.914 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1292 ms
+2020-01-23 15:16:15.017 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-23 15:16:15.017 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-23 15:16:15.017 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-23 15:16:15.017 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-23 15:16:15.018 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-01-23 15:16:15.018 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-01-23 15:16:15.179 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-01-23 15:16:15.275 [Druid-ConnectionPool-Create-1241189309] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/mmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC, errorCode 1049, state 42000
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'mmall'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-01-23 15:16:15.277 [Druid-ConnectionPool-Create-1241189309] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/mmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC, errorCode 1049, state 42000
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'mmall'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-01-23 15:16:15.780 [Druid-ConnectionPool-Create-1241189309] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/mmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC, errorCode 1049, state 42000
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'mmall'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-01-23 15:16:16.283 [Druid-ConnectionPool-Create-1241189309] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/mmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC, errorCode 1049, state 42000
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'mmall'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-01-23 15:16:16.785 [Druid-ConnectionPool-Create-1241189309] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/mmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC, errorCode 1049, state 42000
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'mmall'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-01-23 15:16:17.287 [Druid-ConnectionPool-Create-1241189309] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/mmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC, errorCode 1049, state 42000
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'mmall'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-01-23 15:16:17.791 [Druid-ConnectionPool-Create-1241189309] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/mmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC, errorCode 1049, state 42000
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'mmall'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-01-23 15:16:18.293 [Druid-ConnectionPool-Create-1241189309] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/mmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC, errorCode 1049, state 42000
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'mmall'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-01-23 15:16:18.795 [Druid-ConnectionPool-Create-1241189309] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/mmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC, errorCode 1049, state 42000
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'mmall'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-01-23 15:16:19.302 [Druid-ConnectionPool-Create-1241189309] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/mmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC, errorCode 1049, state 42000
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'mmall'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-01-23 15:16:19.806 [Druid-ConnectionPool-Create-1241189309] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/mmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC, errorCode 1049, state 42000
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'mmall'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-01-23 15:16:20.308 [Druid-ConnectionPool-Create-1241189309] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/mmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC, errorCode 1049, state 42000
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'mmall'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-01-23 15:16:20.810 [Druid-ConnectionPool-Create-1241189309] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/mmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC, errorCode 1049, state 42000
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'mmall'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+2020-01-23 15:16:42.912 [main] INFO  com.tssaber.mmall.MmallApplication - Starting MmallApplication on LAPTOP-G18KLG04 with PID 17956 (D:\project\springsecurity-master\target\classes started by zj in D:\project\springsecurity-master)
+2020-01-23 15:16:42.914 [main] INFO  com.tssaber.mmall.MmallApplication - No active profile set, falling back to default profiles: default
+2020-01-23 15:16:42.950 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@37e4d7bb: startup date [Thu Jan 23 15:16:42 CST 2020]; root of context hierarchy
+2020-01-23 15:16:43.088 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2020-01-23 15:16:43.529 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-23 15:16:43.553 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-23 15:16:43.762 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$5b3f4b5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 15:16:43.799 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$94d38d2d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 15:16:43.822 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$2d815567] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 15:16:43.828 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 15:16:43.829 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5d5c04f9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 15:16:43.834 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$5255f819] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 15:16:43.839 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 15:16:44.054 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+2020-01-23 15:16:44.063 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-01-23 15:16:44.074 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-01-23 15:16:44.074 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.39
+2020-01-23 15:16:44.133 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-01-23 15:16:44.133 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1183 ms
+2020-01-23 15:16:44.246 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-23 15:16:44.247 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-23 15:16:44.247 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-23 15:16:44.247 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-23 15:16:44.247 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-01-23 15:16:44.248 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-01-23 15:16:44.400 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-01-23 15:16:44.504 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-01-23 15:16:44.511 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-23 15:16:44.543 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2020-01-23 15:16:44.550 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-01-23 15:16:44.551 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2020-01-23 15:16:44.577 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-01-23 15:16:44.642 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-01-23 15:16:44.900 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2020-01-23 15:16:44.914 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: mmall_authority
+2020-01-23 15:16:44.916 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: mmall_authority
+2020-01-23 15:16:44.937 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: mmall_order
+2020-01-23 15:16:44.938 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: mmall_order
+2020-01-23 15:16:44.943 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: mmall_order_item
+2020-01-23 15:16:44.944 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: mmall_order_item
+2020-01-23 15:16:44.948 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: mmall_pay_info
+2020-01-23 15:16:44.949 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: mmall_pay_info
+2020-01-23 15:16:44.956 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: mmall_product
+2020-01-23 15:16:44.957 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: mmall_product
+2020-01-23 15:16:44.962 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: mmall_role
+2020-01-23 15:16:44.963 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: mmall_role
+2020-01-23 15:16:44.967 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: mmall_user
+2020-01-23 15:16:44.968 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl - HHH000262: Table not found: mmall_user
+2020-01-23 15:16:45.000 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-23 15:16:45.220 [main] INFO  com.tssaber.mmall.config.JedisConfig - jedisPool 注册成功
+2020-01-23 15:16:45.675 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getJedis' defined in class path resource [com/tssaber/mmall/config/JedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [redis.clients.jedis.Jedis]: Factory method 'getJedis' threw exception; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+2020-01-23 15:16:45.676 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-23 15:16:45.678 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-01-23 15:16:45.680 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-01-23 15:16:45.699 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-01-23 15:16:45.704 [main] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getJedis' defined in class path resource [com/tssaber/mmall/config/JedisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [redis.clients.jedis.Jedis]: Factory method 'getJedis' threw exception; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:764)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:124)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.tssaber.mmall.MmallApplication.main(MmallApplication.java:12)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [redis.clients.jedis.Jedis]: Factory method 'getJedis' threw exception; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 18 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at com.tssaber.mmall.config.JedisConfig.getJedis(JedisConfig.java:61)
+	at com.tssaber.mmall.config.JedisConfig$$EnhancerBySpringCGLIB$$2bad7b21.CGLIB$getJedis$1(<generated>)
+	at com.tssaber.mmall.config.JedisConfig$$EnhancerBySpringCGLIB$$2bad7b21$$FastClassBySpringCGLIB$$4f123207.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at com.tssaber.mmall.config.JedisConfig$$EnhancerBySpringCGLIB$$2bad7b21.getJedis(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 19 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:888)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:432)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:361)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 31 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 38 common frames omitted
+2020-01-23 23:54:21.369 [main] INFO  com.tssaber.mmall.MmallApplication - Starting MmallApplication on LAPTOP-G18KLG04 with PID 21004 (D:\project\springsecurity-master\target\classes started by zj in D:\project\springsecurity-master)
+2020-01-23 23:54:21.372 [main] INFO  com.tssaber.mmall.MmallApplication - No active profile set, falling back to default profiles: default
+2020-01-23 23:54:21.422 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3081f72c: startup date [Thu Jan 23 23:54:21 CST 2020]; root of context hierarchy
+2020-01-23 23:54:21.576 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2020-01-23 23:54:22.118 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-23 23:54:22.149 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-23 23:54:22.437 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$ddc29255] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 23:54:22.474 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1756d427] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 23:54:22.498 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$b0049c61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 23:54:22.504 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 23:54:22.505 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@36417a54' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 23:54:22.509 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$d4d93f13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 23:54:22.515 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-23 23:54:22.786 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+2020-01-23 23:54:22.796 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-01-23 23:54:22.807 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-01-23 23:54:22.807 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.39
+2020-01-23 23:54:22.875 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-01-23 23:54:22.875 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1453 ms
+2020-01-23 23:54:22.982 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-23 23:54:22.982 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-23 23:54:22.982 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-23 23:54:22.982 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-23 23:54:22.983 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-01-23 23:54:22.983 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]

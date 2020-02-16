@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tssaber.mmall.dao.OrderMapper">
+    <resultMap id="OrderResultMap" type="com.tssaber.mmall.entity.pojo.Order">
+        <id column="id" property="id"/>
+        <result column="order_no" property="orderNo" jdbcType="BIGINT"/>
+        <result column="user_id" property="userId" jdbcType="INTEGER"/>
+        <result column="shipping_id" property="shippingId" jdbcType="INTEGER"/>
+        <result column="payment" property="payment" jdbcType="DECIMAL"/>
+        <result column="payment_type" property="paymentType" jdbcType="INTEGER"/>
+        <result column="postage" property="postage" jdbcType="DECIMAL"/>
+        <result column="order_status" property="status" jdbcType="INTEGER"/>
+        <result column="address" property="address" jdbcType="VARCHAR"/>
+        <result column="payment_time" property="paymentTime" jdbcType="TIMESTAMP"/>
+        <result column="send_time" property="sendTime" jdbcType="TIMESTAMP"/>
+        <result column="end_time" property="endTime" jdbcType="TIMESTAMP"/>
+        <result column="close_time" property="closeTime" jdbcType="TIMESTAMP"/>
+        <result column="gmt_create" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="gmt_modified" property="modifiedTime" jdbcType="TIMESTAMP"/>
+        <collection property="orderItemList" ofType="com.tssaber.mmall.entity.pojo.OrderItem">
+            <!--需要重新命名一对多的主键 不然不会装到list中-->
+            <id column="item_id" property="id" jdbcType="INTEGER"/>
+            <result column="user_id" property="userId" jdbcType="INTEGER"/>
+            <result column="order_no" property="orderNo" jdbcType="BIGINT"/>
+            <result column="product_id" property="productId" jdbcType="INTEGER"/>
+            <result column="product_name" property="productName" jdbcType="VARCHAR"/>
+            <result column="product_image" property="productImage" jdbcType="VARCHAR"/>
+            <result column="current_unit_price" property="currentPrice" jdbcType="DECIMAL"/>
+            <result column="quantity" property="quantity" jdbcType="INTEGER"/>
+            <result column="total_price" property="totalPrice" jdbcType="DECIMAL"/>
+            <result column="gmt_create" property="createTime" jdbcType="TIMESTAMP"/>
+            <result column="gmt_modified" property="modifiedTime" jdbcType="TIMESTAMP"/>
+        </collection>
+    </resultMap>
+
+    <cache eviction="LRU" flushInterval="100000" readOnly="true" size="1024"/>
+
+    <insert id="insOrder" parameterType="com.tssaber.mmall.entity.pojo.Order" useGeneratedKeys="true" keyProperty="id">
+        insert into mmall_order
+        (order_no,user_id,shipping_id,payment,address,payment_type,postage,order_status,send_time,gmt_create,gmt_modified)
+        value (#{orderNo},#{userId},1,#{payment},#{address},#{paymentType},#{postage},#{status},#{createTime},#{createTime},#{modifiedTime})
+    </insert>
+
+    <insert id="insOrderItem" parameterType="com.tssaber.mmall.entity.pojo.OrderItem" useGeneratedKeys="true" keyProperty="id">
+        insert into mmall_order_item
+        (user_id,order_no,product_id,product_name,product_image,current_unit_price,quantity,total_price,gmt_create,gmt_modified)
+        value (#{userId},#{orderNo},#{productId},#{productName},#{productImage},#{currentPrice},#{quantity},#{totalPrice},#{createTime},#{modifiedTime})
+    </insert>
+
+<!--    <select id="selOrdersByUserId" parameterType="java.lang.Integer" resultType="com.tssaber.mmall.entity.pojo.Order">-->
+<!--        select id,order_no,user_id,shipping_id,payment,payment_type,postage,order_status,-->
+<!--        send_time-->
+<!--        from mmall_order as morder-->
+<!--        where user_id = #{userId}-->
+<!--    </select>-->
+    <select id="selOrdersByUserId" parameterType="java.lang.Integer" resultMap="OrderResultMap">
+        select morder.id,morder.send_time,morder.order_no,morder.payment,morder.address,
+        morder.order_status,morderItem.product_id,morderItem.product_image,
+        morderItem.product_name,morderItem.quantity,morderItem.current_unit_price
+        from mmall_order as morder,mmall_order_item as morderItem
+        where morder.order_no = morderItem.order_no and morder.user_id = #{userId}
+        ORDER BY morder.gmt_create DESC;
+    </select>
+
+    <select id="selOrderByOrderId" parameterType="java.lang.Integer" resultMap="OrderResultMap">
+        select morder.id,morder.send_time,morder.order_no,morder.payment,morder.address,morder.user_id,
+        morder.order_status,morder.postage,morderItem.product_id,morderItem.product_image,
+        morderItem.product_name,morderItem.quantity,morderItem.current_unit_price
+        from mmall_order as morder,mmall_order_item as morderItem
+        where morder.order_no = morderItem.order_no and morder.Id = #{orderId}
+        ORDER BY morder.gmt_create DESC;
+    </select>
+
+    <select id="selOrderDetailByOrderNo" parameterType="java.lang.Long" resultType="com.tssaber.mmall.entity.pojo.OrderItem">
+        select id,user_id,order_no,product_id,product_name,product_image,current_unit_price,
+        quantity,total_price,gmt_create
+        from mmall_order_item
+        where order_no = #{orderNo}
+    </select>
+</mapper>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tssaber.mmall.dao.UserMapper">
+    <resultMap id="UserResultMap" type="com.tssaber.mmall.entity.pojo.User">
+        <id column="id" property="id"/>
+        <result column="username" property="username" jdbcType="VARCHAR"/>
+        <result column="password" property="password" jdbcType="VARCHAR"/>
+        <result column="email" property="email" jdbcType="VARCHAR"/>
+        <result column="phone" property="phone" jdbcType="VARCHAR"/>
+        <result column="question" property="question" jdbcType="VARCHAR"/>
+        <result column="nickname" property="nickName" jdbcType="VARCHAR"/>
+        <result column="answer" property="answer" jdbcType="VARCHAR"/>
+        <result column="money" property="money" jdbcType="INTEGER"/>
+        <result column="delivery_address" property="deliveryAddress" jdbcType="VARCHAR"/>
+        <result column="gmt_create" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="gmt_modified" property="modifiedTime" jdbcType="TIMESTAMP"/>
+        <!--配置角色用户对应表-->
+        <collection property="roles" ofType="com.tssaber.mmall.entity.pojo.Authority">
+            <id column="id" property="id" jdbcType="INTEGER"/>
+            <result column="user_id" property="userId" jdbcType="INTEGER"/>
+            <result column="role_id" property="roleId" jdbcType="INTEGER"/>
+            <result column="gmt_create" property="createTime" jdbcType="TIMESTAMP"/>
+            <result column="gmt_modified" property="modifiedTime" jdbcType="TIMESTAMP"/>
+            <association property="role" javaType="com.tssaber.mmall.entity.pojo.Role">
+                <id column="id" property="id" jdbcType="INTEGER"/>
+                <result column="role_name" property="name" jdbcType="VARCHAR"/>
+                <result column="gmt_create" property="createTime" jdbcType="TIMESTAMP"/>
+                <result column="gmt_modified" property="modifiedTime" jdbcType="TIMESTAMP"/>
+            </association>
+        </collection>
+    </resultMap>
+
+    <cache eviction="LRU" flushInterval="100000" readOnly="true" size="1024"/>
+
+    <insert id="insUser" parameterType="com.tssaber.mmall.entity.pojo.User" useGeneratedKeys="true" keyProperty="id">
+        insert into mmall_user
+        (username,password,money,gmt_create,gmt_modified)
+        value (#{username},#{password},0,#{createTime},#{modifiedTime})
+    </insert>
+
+
+    <!--关键useGeneratedKeys="true" keyProperty="id"-->
+    <insert id="insAuthority" parameterType="com.tssaber.mmall.entity.pojo.User" useGeneratedKeys="true" keyProperty="id">
+        insert into mmall_authority
+        (gmt_create,gmt_modified,role_id,user_id)
+        value (#{createTime},#{modifiedTime},2,#{id});
+    </insert>
+
+    <select id="selUserById" parameterType="java.lang.Integer" resultMap="UserResultMap">
+        select role.role_name,user.*
+        from mmall_user user,mmall_role role,mmall_authority authority
+        where user.id = #{id} and user.id = authority.user_id and authority.role_id = role.id
+    </select>
+
+    <select id="selUserByUsername" parameterType="java.lang.String" resultMap="UserResultMap" useCache="true">
+        select role.role_name,user.*
+        from mmall_user as user,mmall_role as role,mmall_authority as authority
+        where user.username = #{username} and user.id = authority.user_id and authority.role_id = role.id
+    </select>
+
+    <update id="updUserPassword" parameterType="com.tssaber.mmall.entity.pojo.User">
+        update mmall_user
+        set password = #{password},gmt_modified = #{modifiedTime}
+        where id = #{id}
+    </update>
+
+    <update id="updUser" parameterType="com.tssaber.mmall.entity.pojo.dto.UserDto">
+        update mmall_user
+        set nickname = #{nickName},delivery_address = #{address},gmt_modified = #{modifiedTime}
+        where id = #{id}
+    </update>
+</mapper>

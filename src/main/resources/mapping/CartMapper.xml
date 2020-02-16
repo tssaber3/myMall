@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tssaber.mmall.dao.CartMapper">
+    <resultMap id="CartResultMap" type="com.tssaber.mmall.entity.pojo.Cart">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId" jdbcType="INTEGER"/>
+        <result column="goods_id" property="goodsId" jdbcType="INTEGER"/>
+        <result column="goods_image" property="goodsImage" jdbcType="VARCHAR"/>
+        <result column="goods_name" property="goodsName" jdbcType="VARCHAR"/>
+        <result column="goods_price" property="goodsPrice" jdbcType="DECIMAL"/>
+        <result column="goods_num" property="goodsNum" jdbcType="INTEGER"/>
+        <result column="gmt_create" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="gmt_modified" property="modifiedTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <cache eviction="LRU" flushInterval="100000" readOnly="true" size="1024"/>
+    <insert id="insCart" parameterType="com.tssaber.mmall.entity.pojo.Cart" useGeneratedKeys="true" keyProperty="id">
+        insert into mmall_cart
+        (user_id,goods_id,goods_image,goods_name,goods_price,goods_num,
+        gmt_create,gmt_modified)
+        value (#{userId},#{goodsId},#{goodsImage},#{goodsName},#{goodsPrice},#{goodsNum},
+        #{createTime},#{modifiedTime})
+    </insert>
+
+    <select id="selCartByUserId" parameterType="java.lang.Integer" resultMap="CartResultMap">
+        select cart.id,cart.user_id,cart.goods_id,cart.goods_image,cart.goods_name,cart.goods_num,cart.goods_price,cart.gmt_create
+        from mmall_cart as cart
+        where user_id = #{userId}
+        ORDER BY cart.gmt_create desc
+    </select>
+    
+    <delete id="delCartById" parameterType="java.lang.Integer">
+        delete from mmall_cart
+        where id = #{cartId}
+    </delete>
+
+    <delete id="delCartByUserId" parameterType="java.lang.Integer">
+        delete from mmall_cart
+        where user_id = #{userId}
+    </delete>
+</mapper>

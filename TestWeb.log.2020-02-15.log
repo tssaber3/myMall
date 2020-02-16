@@ -1,0 +1,811 @@
+2020-02-15 22:06:50.014 [main] INFO  com.tssaber.mmall.MmallApplication - Starting MmallApplication on LAPTOP-G18KLG04 with PID 20764 (D:\project\springsecurity-master\target\classes started by zj in D:\project\springsecurity-master)
+2020-02-15 22:06:50.015 [main] INFO  com.tssaber.mmall.MmallApplication - No active profile set, falling back to default profiles: default
+2020-02-15 22:06:50.087 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@95e33cc: startup date [Sat Feb 15 22:06:50 CST 2020]; root of context hierarchy
+2020-02-15 22:06:50.219 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2020-02-15 22:06:50.707 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-15 22:06:50.737 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-15 22:06:51.012 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$2767025d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:06:51.051 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$60fb442f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:06:51.077 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$f9a90c69] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:06:51.081 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:06:51.083 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1f6917fb' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:06:51.087 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$1e7daf1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:06:51.092 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:06:51.363 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+2020-02-15 22:06:51.373 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-02-15 22:06:51.383 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-15 22:06:51.383 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.39
+2020-02-15 22:06:51.447 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-15 22:06:51.447 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1361 ms
+2020-02-15 22:06:51.600 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-15 22:06:51.600 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-15 22:06:51.600 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-15 22:06:51.600 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-15 22:06:51.601 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-02-15 22:06:51.602 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'testFilter' to urls: [/**]
+2020-02-15 22:06:51.602 [localhost-startStop-1] INFO  org.apache.catalina.core.StandardContext - Suspicious url pattern: "/**" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+2020-02-15 22:06:51.602 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2020-02-15 22:06:51.602 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-02-15 22:06:51.821 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-02-15 22:06:52.027 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-02-15 22:06:52.039 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-02-15 22:06:52.114 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2020-02-15 22:06:52.115 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-02-15 22:06:52.116 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2020-02-15 22:06:52.157 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-02-15 22:06:52.261 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-15 22:06:52.845 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2020-02-15 22:06:53.962 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-15 22:06:54.905 [main] INFO  com.tssaber.mmall.config.JedisConfig - jedisPool 注册成功
+2020-02-15 22:06:55.349 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50f13494, org.springframework.security.web.context.SecurityContextPersistenceFilter@6244afc4, org.springframework.security.web.header.HeaderWriterFilter@7d7a8d23, org.springframework.security.web.authentication.logout.LogoutFilter@38197e82, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@dcdb883, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7c9512c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a4e492c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33a8f553, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73c09a98, org.springframework.security.web.session.SessionManagementFilter@59ec5a0b, org.springframework.security.web.access.ExceptionTranslationFilter@1bbc1b90, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3340ff7c]
+2020-02-15 22:06:55.489 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@95e33cc: startup date [Sat Feb 15 22:06:50 CST 2020]; root of context hierarchy
+2020-02-15 22:06:55.532 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/{cartId}/delCartByGoodsId],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.delCartByGoodsId(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2020-02-15 22:06:55.533 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/getUrl],methods=[POST]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.getUrl(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:06:55.533 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/selCartAll]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.selCartAll(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:06:55.533 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/insCart]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.insCart(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:06:55.533 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/comment/register]}" onto public java.lang.String com.tssaber.mmall.controller.CommentController.register(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-02-15 22:06:55.533 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error/text]}" onto public java.lang.String com.tssaber.mmall.controller.ErrorController.text()
+2020-02-15 22:06:55.534 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/goods/getGoodsRand],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.GoodsController.getGoodsRand()
+2020-02-15 22:06:55.534 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/goods/getGoodsNew],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.GoodsController.getGoodsNew()
+2020-02-15 22:06:55.534 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/goods/{goodsId}/getGoodsDetail]}" onto public java.lang.String com.tssaber.mmall.controller.GoodsController.getGoodsDetail(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2020-02-15 22:06:55.534 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/order/{md5}/confirmOrder]}" onto public java.lang.String com.tssaber.mmall.controller.OrderController.confirmOrder(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2020-02-15 22:06:55.535 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seckill/{goodId}/getUrl]}" onto public java.lang.String com.tssaber.mmall.controller.SeckillController.getUrl(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2020-02-15 22:06:55.535 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seckill/{goodSId}/{md5}/confirmOrder]}" onto public java.lang.String com.tssaber.mmall.controller.SeckillController.confirmOrder(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String,java.lang.String)
+2020-02-15 22:06:55.535 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/text/testJson]}" onto public java.lang.String com.tssaber.mmall.controller.TextController.testJson(java.lang.String)
+2020-02-15 22:06:55.535 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/text/textAjax]}" onto public java.lang.String com.tssaber.mmall.controller.TextController.textAjax(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:06:55.536 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/selUser],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.selUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:06:55.537 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getAllOrders],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.getAllOrders(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:06:55.537 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/changePassword],methods=[POST]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.changePassword(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:06:55.537 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{orderId}/getOrderDetail],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.getOrderDetail(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,java.lang.Integer)
+2020-02-15 22:06:55.537 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/updateUserInfo],methods=[POST]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.updateUserInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:06:55.538 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-15 22:06:55.538 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:06:55.558 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-15 22:06:55.559 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-15 22:06:55.573 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionInterceptor
+2020-02-15 22:06:55.591 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-15 22:06:55.915 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-02-15 22:06:55.916 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-02-15 22:06:55.919 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-02-15 22:06:55.921 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2020-02-15 22:06:55.922 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-02-15 22:06:55.947 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-02-15 22:06:55.951 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+2020-02-15 22:06:56.007 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#deacbae:0/SimpleConnection@6c953cfd [delegate=amqp://guest@127.0.0.1:5672/, localPort= 64622]
+2020-02-15 22:06:56.081 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-02-15 22:06:56.089 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-02-15 22:06:56.097 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+2020-02-15 22:06:56.100 [main] INFO  com.tssaber.mmall.MmallApplication - Started MmallApplication in 6.428 seconds (JVM running for 7.545)
+2020-02-15 22:22:00.980 [main] INFO  com.tssaber.mmall.MmallApplication - Starting MmallApplication on LAPTOP-G18KLG04 with PID 12168 (D:\project\springsecurity-master\target\classes started by zj in D:\project\springsecurity-master)
+2020-02-15 22:22:00.981 [main] INFO  com.tssaber.mmall.MmallApplication - No active profile set, falling back to default profiles: default
+2020-02-15 22:22:01.025 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f19ac19: startup date [Sat Feb 15 22:22:01 CST 2020]; root of context hierarchy
+2020-02-15 22:22:01.348 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2020-02-15 22:22:02.237 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-15 22:22:02.264 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-15 22:22:02.509 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$1e30eced] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:22:02.547 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$57c52ebf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:22:02.572 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$f072f6f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:22:02.578 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:22:02.579 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@36c2b646' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:22:02.584 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$154799ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:22:02.590 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:22:02.836 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+2020-02-15 22:22:02.874 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-02-15 22:22:02.892 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-15 22:22:02.893 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.39
+2020-02-15 22:22:03.072 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-15 22:22:03.072 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2047 ms
+2020-02-15 22:22:03.213 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-15 22:22:03.214 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-15 22:22:03.214 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-15 22:22:03.214 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-15 22:22:03.214 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-02-15 22:22:03.215 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'testFilter' to urls: [/**]
+2020-02-15 22:22:03.215 [localhost-startStop-1] INFO  org.apache.catalina.core.StandardContext - Suspicious url pattern: "/**" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+2020-02-15 22:22:03.215 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2020-02-15 22:22:03.215 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-02-15 22:22:03.572 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-02-15 22:22:03.737 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-02-15 22:22:03.748 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-02-15 22:22:03.792 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2020-02-15 22:22:03.794 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-02-15 22:22:03.795 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2020-02-15 22:22:03.823 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-02-15 22:22:03.914 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-15 22:22:04.358 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2020-02-15 22:22:04.991 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-15 22:22:05.347 [main] INFO  com.tssaber.mmall.config.JedisConfig - jedisPool 注册成功
+2020-02-15 22:22:05.813 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ac0d49, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c7c898a, org.springframework.security.web.header.HeaderWriterFilter@fe38c0e, org.springframework.security.web.authentication.logout.LogoutFilter@3acc65f0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5516ee5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1ee6434, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a654e05, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18df26a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c6ab057, org.springframework.security.web.session.SessionManagementFilter@2cbc2db2, org.springframework.security.web.access.ExceptionTranslationFilter@102fd71d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ee186f3]
+2020-02-15 22:22:05.968 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f19ac19: startup date [Sat Feb 15 22:22:01 CST 2020]; root of context hierarchy
+2020-02-15 22:22:06.008 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/{cartId}/delCartByGoodsId],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.delCartByGoodsId(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2020-02-15 22:22:06.009 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/insCart]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.insCart(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:22:06.009 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/selCartAll]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.selCartAll(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:22:06.009 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/getUrl],methods=[POST]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.getUrl(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:22:06.009 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/comment/register]}" onto public java.lang.String com.tssaber.mmall.controller.CommentController.register(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-02-15 22:22:06.010 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error/text]}" onto public java.lang.String com.tssaber.mmall.controller.ErrorController.text()
+2020-02-15 22:22:06.010 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/goods/{goodsId}/getGoodsDetail]}" onto public java.lang.String com.tssaber.mmall.controller.GoodsController.getGoodsDetail(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2020-02-15 22:22:06.010 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/goods/getGoodsRand],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.GoodsController.getGoodsRand()
+2020-02-15 22:22:06.011 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/goods/getGoodsNew],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.GoodsController.getGoodsNew()
+2020-02-15 22:22:06.011 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/order/{md5}/confirmOrder]}" onto public java.lang.String com.tssaber.mmall.controller.OrderController.confirmOrder(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2020-02-15 22:22:06.011 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seckill/{goodId}/getUrl]}" onto public java.lang.String com.tssaber.mmall.controller.SeckillController.getUrl(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2020-02-15 22:22:06.011 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seckill/{goodSId}/{md5}/confirmOrder]}" onto public java.lang.String com.tssaber.mmall.controller.SeckillController.confirmOrder(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String,java.lang.String)
+2020-02-15 22:22:06.012 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/text/textAjax]}" onto public java.lang.String com.tssaber.mmall.controller.TextController.textAjax(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:22:06.012 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/text/testJson]}" onto public java.lang.String com.tssaber.mmall.controller.TextController.testJson(java.lang.String)
+2020-02-15 22:22:06.013 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/selUser],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.selUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:22:06.013 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{orderId}/getOrderDetail],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.getOrderDetail(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,java.lang.Integer)
+2020-02-15 22:22:06.013 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/updateUserInfo],methods=[POST]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.updateUserInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:22:06.013 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getAllOrders],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.getAllOrders(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:22:06.013 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/changePassword],methods=[POST]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.changePassword(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:22:06.015 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-15 22:22:06.015 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:22:06.038 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-15 22:22:06.038 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-15 22:22:06.051 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionInterceptor
+2020-02-15 22:22:06.066 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-15 22:22:06.362 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-02-15 22:22:06.363 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-02-15 22:22:06.368 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-02-15 22:22:06.370 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2020-02-15 22:22:06.370 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-02-15 22:22:06.390 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-02-15 22:22:06.393 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+2020-02-15 22:22:06.412 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#52d0059:0/SimpleConnection@9557b53 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 49422]
+2020-02-15 22:22:06.447 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-02-15 22:22:06.456 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-02-15 22:22:06.464 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+2020-02-15 22:22:06.467 [main] INFO  com.tssaber.mmall.MmallApplication - Started MmallApplication in 5.851 seconds (JVM running for 7.644)
+2020-02-15 22:25:47.261 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-02-15 22:25:47.262 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-02-15 22:25:47.272 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2020-02-15 22:25:47.281 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.security.AuthProvider - 进入authenticate验证模块
+2020-02-15 22:25:47.282 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:25:47.452 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.security.AuthProvider - 密码匹配成功 生成的token是:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTkyMjcyMDkwNyIsImV4cCI6MTU4MTk0OTU0NywiaWF0IjoxNTgxNzc2NzQ3fQ.kedaa2juTVocUpgfU85h7b2NbdKS_rLbnuRYljdGl7hB7f4wXI6KQL0wsAKOHYkUiZ_Q0NqWSpdcs0SQxnlqKA
+2020-02-15 22:25:47.458 [http-nio-8090-exec-1] INFO  c.t.m.security.AjaxAuthenticationSuccessHandler - 进入登录成功控制器
+2020-02-15 22:25:47.682 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:25:47.683 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 不是请求控制器资源放行
+2020-02-15 22:25:47.683 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:25:47.683 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:25:47.684 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:25:47.684 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:25:47.768 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:25:47.768 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 22:25:47.775 [http-nio-8090-exec-3] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:25:47.788 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:25:47.788 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:25:47.789 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:25:47.802 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 22:25:47.802 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:25:47.802 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 22:25:47.805 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 22:25:47.807 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 22:26:28.608 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:26:28.608 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:26:28.608 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:26:28.609 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 22:26:28.613 [http-nio-8090-exec-7] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:26:28.620 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:26:28.621 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:26:28.623 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 22:26:28.627 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:26:28.627 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 22:26:28.629 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 22:26:28.629 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:26:28.630 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:26:28.631 [http-nio-8090-exec-7] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:26:28.632 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 22:27:18.481 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:27:18.481 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:27:18.482 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 22:27:18.482 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:27:18.484 [http-nio-8090-exec-3] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:27:18.486 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 22:27:18.487 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:27:18.487 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 22:27:18.488 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 22:27:18.490 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 22:27:18.490 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:27:18.491 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:27:18.521 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:27:18.522 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:27:18.523 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:28:19.191 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:28:19.192 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 22:28:19.195 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 22:28:19.195 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:28:19.197 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:28:19.198 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:28:19.203 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 22:28:19.204 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:28:19.208 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 22:28:19.210 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 22:28:19.217 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:28:19.217 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:28:19.229 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:28:19.231 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:28:19.233 [http-nio-8090-exec-2] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:29:20.330 [main] INFO  com.tssaber.mmall.MmallApplication - Starting MmallApplication on LAPTOP-G18KLG04 with PID 20732 (D:\project\springsecurity-master\target\classes started by zj in D:\project\springsecurity-master)
+2020-02-15 22:29:20.332 [main] INFO  com.tssaber.mmall.MmallApplication - No active profile set, falling back to default profiles: default
+2020-02-15 22:29:20.377 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@95e33cc: startup date [Sat Feb 15 22:29:20 CST 2020]; root of context hierarchy
+2020-02-15 22:29:20.517 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2020-02-15 22:29:21.047 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-15 22:29:21.075 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-15 22:29:21.313 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$d5b9cf5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:29:21.349 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f4e1130] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:29:21.372 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$a7fbd96a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:29:21.378 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:29:21.379 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4b97c4ad' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:29:21.383 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$ccd07c1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:29:21.388 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:29:21.615 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+2020-02-15 22:29:21.624 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-02-15 22:29:21.635 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-15 22:29:21.635 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.39
+2020-02-15 22:29:21.697 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-15 22:29:21.698 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1321 ms
+2020-02-15 22:29:21.811 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-15 22:29:21.812 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-15 22:29:21.812 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-15 22:29:21.812 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-15 22:29:21.812 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-02-15 22:29:21.812 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'testFilter' to urls: [/**]
+2020-02-15 22:29:21.813 [localhost-startStop-1] INFO  org.apache.catalina.core.StandardContext - Suspicious url pattern: "/**" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+2020-02-15 22:29:21.813 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2020-02-15 22:29:21.813 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-02-15 22:29:21.980 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-02-15 22:29:22.078 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-02-15 22:29:22.085 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-02-15 22:29:22.114 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2020-02-15 22:29:22.115 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-02-15 22:29:22.116 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2020-02-15 22:29:22.138 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-02-15 22:29:22.195 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-15 22:29:22.458 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2020-02-15 22:29:22.855 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-15 22:29:23.107 [main] INFO  com.tssaber.mmall.config.JedisConfig - jedisPool 注册成功
+2020-02-15 22:29:23.506 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27d6467, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a9baba8, org.springframework.security.web.header.HeaderWriterFilter@5a4e492c, org.springframework.security.web.authentication.logout.LogoutFilter@75c589f2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5dd227b7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@284b487f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34e9de8d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ec211cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5bf1b528, org.springframework.security.web.session.SessionManagementFilter@26a202ae, org.springframework.security.web.access.ExceptionTranslationFilter@29431f61, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@dcdb883]
+2020-02-15 22:29:23.658 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@95e33cc: startup date [Sat Feb 15 22:29:20 CST 2020]; root of context hierarchy
+2020-02-15 22:29:23.700 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/insCart]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.insCart(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:29:23.701 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/selCartAll]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.selCartAll(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:29:23.701 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/{cartId}/delCartByGoodsId],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.delCartByGoodsId(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2020-02-15 22:29:23.701 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/getUrl],methods=[POST]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.getUrl(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:29:23.701 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/comment/register]}" onto public java.lang.String com.tssaber.mmall.controller.CommentController.register(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-02-15 22:29:23.702 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error/text]}" onto public java.lang.String com.tssaber.mmall.controller.ErrorController.text()
+2020-02-15 22:29:23.702 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/goods/getGoodsRand],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.GoodsController.getGoodsRand()
+2020-02-15 22:29:23.702 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/goods/getGoodsNew],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.GoodsController.getGoodsNew()
+2020-02-15 22:29:23.702 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/goods/{goodsId}/getGoodsDetail]}" onto public java.lang.String com.tssaber.mmall.controller.GoodsController.getGoodsDetail(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2020-02-15 22:29:23.703 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/order/{md5}/confirmOrder]}" onto public java.lang.String com.tssaber.mmall.controller.OrderController.confirmOrder(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2020-02-15 22:29:23.703 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seckill/{goodId}/getUrl]}" onto public java.lang.String com.tssaber.mmall.controller.SeckillController.getUrl(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2020-02-15 22:29:23.703 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seckill/{goodSId}/{md5}/confirmOrder]}" onto public java.lang.String com.tssaber.mmall.controller.SeckillController.confirmOrder(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String,java.lang.String)
+2020-02-15 22:29:23.704 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/text/textAjax]}" onto public java.lang.String com.tssaber.mmall.controller.TextController.textAjax(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:29:23.704 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/text/testJson]}" onto public java.lang.String com.tssaber.mmall.controller.TextController.testJson(java.lang.String)
+2020-02-15 22:29:23.705 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/changePassword],methods=[POST]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.changePassword(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:29:23.705 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/selUser],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.selUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:29:23.706 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/updateUserInfo],methods=[POST]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.updateUserInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:29:23.706 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{orderId}/getOrderDetail],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.getOrderDetail(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,java.lang.Integer)
+2020-02-15 22:29:23.706 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getAllOrders],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.getAllOrders(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:29:23.707 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-15 22:29:23.707 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:29:23.737 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-15 22:29:23.737 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-15 22:29:23.749 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionInterceptor
+2020-02-15 22:29:23.766 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-15 22:29:24.071 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-02-15 22:29:24.073 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-02-15 22:29:24.076 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-02-15 22:29:24.078 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2020-02-15 22:29:24.079 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-02-15 22:29:24.098 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-02-15 22:29:24.101 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+2020-02-15 22:29:24.120 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#7aa498d9:0/SimpleConnection@70bd924 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50050]
+2020-02-15 22:29:24.155 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-02-15 22:29:24.163 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-02-15 22:29:24.171 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+2020-02-15 22:29:24.174 [main] INFO  com.tssaber.mmall.MmallApplication - Started MmallApplication in 4.024 seconds (JVM running for 5.039)
+2020-02-15 22:29:26.549 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-02-15 22:29:26.549 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-02-15 22:29:26.568 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2020-02-15 22:29:26.588 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:29:26.588 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:29:26.588 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:29:26.589 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:29:26.589 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 22:29:26.589 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:29:26.686 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:29:26.712 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 22:29:26.712 [http-nio-8090-exec-2] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:29:26.716 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:29:26.716 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:29:26.719 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:29:26.764 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 22:29:26.770 [http-nio-8090-exec-2] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 22:29:26.771 [http-nio-8090-exec-2] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 22:34:54.562 [http-nio-8090-exec-10] INFO  c.t.m.s.AuthenticationLoginOutSuccessHandler - 进入退出成功拦截器
+2020-02-15 22:34:54.566 [http-nio-8090-exec-10] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.tssaber.mmall.security.AuthenticationLoginOutSuccessHandler.onLogoutSuccess(AuthenticationLoginOutSuccessHandler.java:43)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-02-15 22:34:54.569 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:34:54.570 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:38:52.179 [main] INFO  com.tssaber.mmall.MmallApplication - Starting MmallApplication on LAPTOP-G18KLG04 with PID 10956 (D:\project\springsecurity-master\target\classes started by zj in D:\project\springsecurity-master)
+2020-02-15 22:38:52.191 [main] INFO  com.tssaber.mmall.MmallApplication - No active profile set, falling back to default profiles: default
+2020-02-15 22:38:52.262 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@95e33cc: startup date [Sat Feb 15 22:38:52 CST 2020]; root of context hierarchy
+2020-02-15 22:38:52.431 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2020-02-15 22:38:53.171 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-15 22:38:53.220 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-15 22:38:53.580 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$d5b9cf5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:38:53.613 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f4e1130] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:38:53.639 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$a7fbd96a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:38:53.645 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:38:53.646 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4b97c4ad' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:38:53.651 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$ccd07c1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:38:53.658 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-15 22:38:54.053 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+2020-02-15 22:38:54.064 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-02-15 22:38:54.078 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-15 22:38:54.078 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.39
+2020-02-15 22:38:54.175 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-15 22:38:54.175 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1913 ms
+2020-02-15 22:38:54.341 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-15 22:38:54.342 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-02-15 22:38:54.342 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-02-15 22:38:54.342 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-02-15 22:38:54.343 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-02-15 22:38:54.343 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'testFilter' to urls: [/**]
+2020-02-15 22:38:54.343 [localhost-startStop-1] INFO  org.apache.catalina.core.StandardContext - Suspicious url pattern: "/**" in context [] - see sections 12.1 and 12.2 of the Servlet specification
+2020-02-15 22:38:54.343 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'corsFilter' to: [/*]
+2020-02-15 22:38:54.343 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-02-15 22:38:54.536 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-02-15 22:38:54.705 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-02-15 22:38:54.718 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-02-15 22:38:54.785 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2020-02-15 22:38:54.788 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-02-15 22:38:54.789 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2020-02-15 22:38:54.829 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-02-15 22:38:54.924 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-15 22:38:55.279 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2020-02-15 22:38:55.724 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-15 22:38:55.965 [main] INFO  com.tssaber.mmall.config.JedisConfig - jedisPool 注册成功
+2020-02-15 22:38:56.349 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27d6467, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a9baba8, org.springframework.security.web.header.HeaderWriterFilter@5a4e492c, org.springframework.security.web.authentication.logout.LogoutFilter@75c589f2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5dd227b7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@284b487f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34e9de8d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ec211cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5bf1b528, org.springframework.security.web.session.SessionManagementFilter@26a202ae, org.springframework.security.web.access.ExceptionTranslationFilter@29431f61, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@dcdb883]
+2020-02-15 22:38:56.494 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@95e33cc: startup date [Sat Feb 15 22:38:52 CST 2020]; root of context hierarchy
+2020-02-15 22:38:56.536 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/insCart]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.insCart(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:38:56.537 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/{cartId}/delCartByGoodsId],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.delCartByGoodsId(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2020-02-15 22:38:56.537 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/getUrl],methods=[POST]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.getUrl(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:38:56.537 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart/selCartAll]}" onto public java.lang.String com.tssaber.mmall.controller.CartController.selCartAll(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:38:56.537 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/comment/register]}" onto public java.lang.String com.tssaber.mmall.controller.CommentController.register(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,java.lang.String)
+2020-02-15 22:38:56.538 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error/text]}" onto public java.lang.String com.tssaber.mmall.controller.ErrorController.text()
+2020-02-15 22:38:56.538 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/goods/getGoodsRand],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.GoodsController.getGoodsRand()
+2020-02-15 22:38:56.538 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/goods/{goodsId}/getGoodsDetail]}" onto public java.lang.String com.tssaber.mmall.controller.GoodsController.getGoodsDetail(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2020-02-15 22:38:56.539 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/goods/getGoodsNew],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.GoodsController.getGoodsNew()
+2020-02-15 22:38:56.539 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/order/{md5}/confirmOrder]}" onto public java.lang.String com.tssaber.mmall.controller.OrderController.confirmOrder(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2020-02-15 22:38:56.539 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seckill/{goodSId}/{md5}/confirmOrder]}" onto public java.lang.String com.tssaber.mmall.controller.SeckillController.confirmOrder(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer,java.lang.String,java.lang.String)
+2020-02-15 22:38:56.539 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/seckill/{goodId}/getUrl]}" onto public java.lang.String com.tssaber.mmall.controller.SeckillController.getUrl(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2020-02-15 22:38:56.540 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/text/testJson]}" onto public java.lang.String com.tssaber.mmall.controller.TextController.testJson(java.lang.String)
+2020-02-15 22:38:56.540 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/text/textAjax]}" onto public java.lang.String com.tssaber.mmall.controller.TextController.textAjax(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:38:56.541 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/selUser],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.selUser(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:38:56.541 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/changePassword],methods=[POST]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.changePassword(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:38:56.541 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{orderId}/getOrderDetail],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.getOrderDetail(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,java.lang.Integer)
+2020-02-15 22:38:56.541 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/updateUserInfo],methods=[POST]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.updateUserInfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-02-15 22:38:56.541 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getAllOrders],methods=[GET]}" onto public java.lang.String com.tssaber.mmall.controller.UserController.getAllOrders(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:38:56.543 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-15 22:38:56.543 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-15 22:38:56.564 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-15 22:38:56.564 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-15 22:38:56.574 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionInterceptor
+2020-02-15 22:38:56.590 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-15 22:38:56.870 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-02-15 22:38:56.871 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-02-15 22:38:56.875 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-02-15 22:38:56.877 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2020-02-15 22:38:56.878 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-02-15 22:38:56.896 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2020-02-15 22:38:56.899 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+2020-02-15 22:38:56.915 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  o.s.a.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#7d41746b:0/SimpleConnection@6b1abed2 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 51222]
+2020-02-15 22:38:56.949 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-02-15 22:38:56.957 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-02-15 22:38:56.965 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+2020-02-15 22:38:56.968 [main] INFO  com.tssaber.mmall.MmallApplication - Started MmallApplication in 5.045 seconds (JVM running for 6.084)
+2020-02-15 22:39:02.579 [http-nio-8090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-02-15 22:39:02.580 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-02-15 22:39:02.603 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2020-02-15 22:39:02.629 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:39:02.629 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:39:02.629 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:39:02.630 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:39:02.630 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 22:39:02.630 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:39:02.726 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:39:02.758 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 22:39:02.759 [http-nio-8090-exec-3] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:39:02.759 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:39:02.759 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:39:02.761 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:39:02.821 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 22:39:02.827 [http-nio-8090-exec-3] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 22:39:02.831 [http-nio-8090-exec-3] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 22:39:04.692 [http-nio-8090-exec-7] INFO  c.t.m.s.AuthenticationLoginOutSuccessHandler - 进入退出成功拦截器
+2020-02-15 22:39:23.187 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:39:23.188 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 22:39:23.192 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 22:39:23.193 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:39:23.193 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:39:23.193 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:39:23.195 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 22:39:23.196 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 22:39:23.196 [http-nio-8090-exec-10] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:39:23.197 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:39:23.197 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:39:23.199 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 22:39:23.211 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:39:23.213 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:39:23.214 [http-nio-8090-exec-9] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:39:24.570 [http-nio-8090-exec-1] INFO  c.t.m.s.AuthenticationLoginOutSuccessHandler - 进入退出成功拦截器
+2020-02-15 22:39:38.111 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:39:38.111 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 22:39:38.114 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:39:38.115 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:39:38.116 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:39:38.117 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:39:38.117 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:39:38.117 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 22:39:38.118 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:39:38.118 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 22:39:38.119 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 22:39:38.121 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 22:39:38.123 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:39:38.123 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:39:38.125 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:39:40.366 [http-nio-8090-exec-3] INFO  c.t.m.s.AuthenticationLoginOutSuccessHandler - 进入退出成功拦截器
+2020-02-15 22:39:52.594 [http-nio-8090-exec-5] INFO  c.t.m.s.AuthenticationLoginOutSuccessHandler - 进入退出成功拦截器
+2020-02-15 22:40:16.119 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:40:16.119 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 22:40:16.123 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 22:40:16.123 [http-nio-8090-exec-10] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:40:16.124 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:40:16.124 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:40:16.125 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 22:40:16.125 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:40:16.126 [http-nio-8090-exec-10] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 22:40:16.131 [http-nio-8090-exec-10] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 22:40:16.131 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:40:16.132 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:40:16.155 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:40:16.155 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:40:16.157 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:40:17.240 [http-nio-8090-exec-9] INFO  c.t.m.s.AuthenticationLoginOutSuccessHandler - 进入退出成功拦截器
+2020-02-15 22:40:48.645 [http-nio-8090-exec-5] INFO  c.t.m.s.AuthenticationLoginOutSuccessHandler - 进入退出成功拦截器
+2020-02-15 22:41:24.947 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:41:24.947 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 22:41:24.952 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 22:41:24.953 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:41:24.954 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:41:24.954 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:41:24.958 [http-nio-8090-exec-10] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:41:24.963 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:41:24.963 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:41:24.969 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 22:41:24.971 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 22:41:24.974 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 22:41:24.976 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:41:24.977 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:41:24.980 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:41:26.459 [http-nio-8090-exec-9] INFO  c.t.m.s.AuthenticationLoginOutSuccessHandler - 进入退出成功拦截器
+2020-02-15 22:41:38.175 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:41:38.175 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 22:41:38.179 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 22:41:38.179 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:41:38.180 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 22:41:38.181 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:41:38.183 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:41:38.186 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 22:41:38.187 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:41:38.187 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:41:38.187 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:41:38.188 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 22:41:38.203 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:41:38.203 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:41:38.205 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:41:38.479 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:41:38.479 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 22:41:38.485 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 22:41:38.486 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:41:38.486 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 22:41:38.489 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 22:41:38.489 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:41:38.489 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:41:38.490 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:41:38.491 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 22:41:38.507 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:41:38.509 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:41:38.512 [http-nio-8090-exec-7] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:41:38.507 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:41:38.518 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:41:39.361 [http-nio-8090-exec-6] INFO  c.t.m.s.AuthenticationLoginOutSuccessHandler - 进入退出成功拦截器
+2020-02-15 22:43:03.124 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:43:03.125 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 22:43:03.130 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 22:43:03.130 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:43:03.131 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:43:03.131 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:43:03.131 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 22:43:03.132 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:43:03.132 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:43:03.135 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 22:43:03.136 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:43:03.139 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 22:43:03.149 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:43:03.149 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:43:03.151 [http-nio-8090-exec-7] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:43:04.428 [http-nio-8090-exec-9] INFO  c.t.m.s.AuthenticationLoginOutSuccessHandler - 进入退出成功拦截器
+2020-02-15 22:43:13.421 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.security.AuthProvider - 进入authenticate验证模块
+2020-02-15 22:43:13.421 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:43:13.514 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.security.AuthProvider - 密码匹配成功 生成的token是:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTkyMjcyMDkwNyIsImV4cCI6MTU4MTk1MDU5MywiaWF0IjoxNTgxNzc3NzkzfQ.3ohp7wBxUXKQqKGkk8t_KvFzXIR1ECOjV2AwW0CRJrkpoYpgsKlWf6XwtbwhbwjRXYSzIgGWrdtXqQ_bdrQJqw
+2020-02-15 22:43:13.515 [http-nio-8090-exec-6] INFO  c.t.m.security.AjaxAuthenticationSuccessHandler - 进入登录成功控制器
+2020-02-15 22:43:13.928 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:43:13.928 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 22:43:13.931 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 22:43:13.931 [http-nio-8090-exec-10] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:43:13.931 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 22:43:13.933 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:43:13.933 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:43:13.934 [http-nio-8090-exec-10] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 22:43:13.935 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:43:13.936 [http-nio-8090-exec-10] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 22:43:13.936 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:43:13.936 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:43:13.939 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:43:13.939 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:43:13.940 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:43:15.845 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:43:15.845 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 22:43:15.847 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:43:15.848 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:43:15.849 [http-nio-8090-exec-9] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 22:43:15.849 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 22:43:15.849 [http-nio-8090-exec-7] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 22:43:15.849 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 22:43:15.850 [http-nio-8090-exec-7] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 22:43:15.852 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:43:15.853 [http-nio-8090-exec-7] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 22:43:15.853 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:43:15.873 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 22:43:15.874 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 22:43:15.876 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 23:45:39.898 [http-nio-8090-exec-10] INFO  com.tssaber.mmall.security.AuthProvider - 进入authenticate验证模块
+2020-02-15 23:45:39.904 [http-nio-8090-exec-10] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:45:40.053 [http-nio-8090-exec-10] INFO  com.tssaber.mmall.security.AuthProvider - 密码匹配成功 生成的token是:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTkyMjcyMDkwNyIsImV4cCI6MTU4MTk1NDM0MCwiaWF0IjoxNTgxNzgxNTQwfQ.wIsPA5WjQnfdnsT5hDrK5mbVHKkZK6xRdpB9aIggKxwvjE8sVosZxy_lHW-4WtRs4kgygJ8p0nNOhKJ2sQaJJw
+2020-02-15 23:45:40.063 [http-nio-8090-exec-10] INFO  c.t.m.security.AjaxAuthenticationSuccessHandler - 进入登录成功控制器
+2020-02-15 23:45:40.205 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:45:40.205 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:45:40.206 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 23:45:40.206 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 23:45:40.212 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:45:40.213 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 不是请求控制器资源放行
+2020-02-15 23:45:40.229 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 23:45:40.259 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:45:40.259 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 23:45:40.261 [http-nio-8090-exec-7] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 23:45:40.261 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:45:40.261 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:45:40.283 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:45:40.283 [http-nio-8090-exec-2] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:45:40.283 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:45:40.285 [http-nio-8090-exec-2] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:45:40.289 [http-nio-8090-exec-2] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:45:58.448 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:45:58.449 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:45:58.451 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:45:58.451 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:45:58.451 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 23:45:58.451 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:45:58.452 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:45:58.452 [http-nio-8090-exec-3] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 23:45:58.453 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:45:58.453 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:45:58.453 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 23:45:58.454 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:45:58.456 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:45:58.456 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 23:45:58.456 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 23:47:33.001 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:47:33.001 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:47:33.003 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:47:33.004 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:47:33.013 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:47:33.018 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:47:33.019 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:52:22.094 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:52:22.094 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:52:22.098 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:52:22.100 [http-nio-8090-exec-2] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:52:22.107 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:52:22.112 [http-nio-8090-exec-2] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:52:22.114 [http-nio-8090-exec-2] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:52:42.369 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:52:42.370 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:52:42.375 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:52:42.375 [http-nio-8090-exec-3] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:52:42.375 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:52:42.376 [http-nio-8090-exec-3] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:52:42.379 [http-nio-8090-exec-3] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:53:05.729 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:53:05.729 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:53:05.730 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:53:05.730 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:53:05.730 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:53:05.732 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:53:05.735 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:53:12.127 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:53:12.128 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:53:12.134 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:53:12.134 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:53:12.136 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:53:12.139 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:53:12.141 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:53:21.555 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:53:21.555 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:53:21.561 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:53:21.561 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:53:21.561 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:53:21.562 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:53:21.565 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:53:21.565 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:53:21.565 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 23:53:21.567 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:53:21.567 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 23:53:21.573 [http-nio-8090-exec-10] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 23:53:21.582 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:53:21.582 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 离开拦截器
+2020-02-15 23:53:21.584 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.service.Impl.GoodsServiceImpl - 缓存中存在 从缓存中取
+2020-02-15 23:54:29.427 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:54:29.427 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:54:29.431 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:54:29.431 [http-nio-8090-exec-3] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:54:29.433 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:54:29.436 [http-nio-8090-exec-3] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:54:29.440 [http-nio-8090-exec-3] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:54:44.518 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:54:44.518 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:54:44.521 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:54:44.521 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:54:44.521 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:54:44.523 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:54:44.526 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:54:44.847 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:54:44.847 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:54:44.852 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:54:44.852 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:54:44.852 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:54:44.853 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:54:44.857 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:54:45.134 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:54:45.134 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:54:45.143 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:54:45.143 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:54:45.144 [http-nio-8090-exec-6] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:54:45.145 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:54:45.148 [http-nio-8090-exec-6] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:55:18.370 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:55:18.371 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:55:18.374 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:55:18.375 [http-nio-8090-exec-9] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:55:18.375 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:55:18.376 [http-nio-8090-exec-9] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:55:18.379 [http-nio-8090-exec-9] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:55:30.571 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:55:30.571 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:55:30.576 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:55:30.576 [http-nio-8090-exec-10] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:55:30.576 [http-nio-8090-exec-10] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:55:30.578 [http-nio-8090-exec-10] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:55:30.581 [http-nio-8090-exec-10] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:56:18.181 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:56:18.182 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:56:18.186 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:56:18.186 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:56:18.195 [http-nio-8090-exec-1] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:56:18.196 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:56:18.197 [http-nio-8090-exec-1] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:56:56.417 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:56:56.417 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:56:56.421 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:56:56.421 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:56:56.422 [http-nio-8090-exec-4] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:56:56.422 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:56:56.424 [http-nio-8090-exec-4] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:57:33.947 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:57:33.948 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:57:33.951 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:57:33.951 [http-nio-8090-exec-7] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:57:33.952 [http-nio-8090-exec-7] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:57:33.954 [http-nio-8090-exec-7] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:57:33.955 [http-nio-8090-exec-7] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:57:47.917 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:57:47.917 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:57:47.918 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:57:47.919 [http-nio-8090-exec-2] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:57:47.919 [http-nio-8090-exec-2] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:57:47.919 [http-nio-8090-exec-2] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:57:47.921 [http-nio-8090-exec-2] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:57:53.792 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:57:53.793 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:57:53.798 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:57:53.798 [http-nio-8090-exec-3] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:57:53.798 [http-nio-8090-exec-3] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:57:53.799 [http-nio-8090-exec-3] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:57:53.800 [http-nio-8090-exec-3] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:58:28.655 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:58:28.655 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:58:28.658 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:58:28.658 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:58:28.663 [http-nio-8090-exec-8] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:58:28.665 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:58:28.666 [http-nio-8090-exec-8] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-15 23:58:55.457 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-15 23:58:55.458 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-15 23:58:55.460 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-15 23:58:55.460 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-15 23:58:55.461 [http-nio-8090-exec-5] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-15 23:58:55.463 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-15 23:58:55.465 [http-nio-8090-exec-5] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
+2020-02-16 00:06:07.579 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入拦截器
+2020-02-16 00:06:07.579 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 有UserLoginToken注解 需要验证
+2020-02-16 00:06:07.580 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入spring security验证
+2020-02-16 00:06:07.580 [http-nio-8090-exec-9] INFO  com.tssaber.mmall.security.UserDetailServiceImpl - 进入loadUserByUsername方法
+2020-02-16 00:06:07.584 [http-nio-8090-exec-9] INFO  c.t.mmall.interceptor.AuthenticationInterceptor - 进入redis获取token
+2020-02-16 00:06:07.589 [http-nio-8090-exec-9] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 进入selUser方法
+2020-02-16 00:06:07.590 [http-nio-8090-exec-9] INFO  com.tssaber.mmall.service.Impl.UserServiceImpl - 从缓存中拿取对象
